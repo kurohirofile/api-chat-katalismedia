@@ -19,8 +19,5 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(router);// Anda harus mengganti nilainya dengan kunci API sebenarnya.
 
-app.get('/api/open-ai-key', (req, res) => {
-  res.json({ Open_AI_Key: OPEN_API_KEY });
-});
 
 app.listen(5000, ()=> console.log('Server running at port 5000'));
