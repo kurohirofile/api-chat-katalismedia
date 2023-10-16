@@ -17,8 +17,7 @@ try {
 app.use(cors({ credentials:true, origin:'https://chat.katalismedia.com' }));
 app.use(cookieParser());
 app.use(express.json());
-app.use(router);
-const OPEN_API_KEY = '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'; // Anda harus mengganti nilainya dengan kunci API sebenarnya.
+app.use(router);// Anda harus mengganti nilainya dengan kunci API sebenarnya.
 
 app.get('/api/open-ai-key', (req, res) => {
   res.json({ Open_AI_Key: OPEN_API_KEY });
